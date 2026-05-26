@@ -78,6 +78,10 @@ The workbook is organized across **4 purpose-built sheets:**
 ```
 > Ratings mapped: `TV-MA` → Adult | `TV-14` → Teen | `PG` / `TV-PG` → Family | All others → Other
 
+📸 **Formula Sheet in Action:**
+
+![Formula Sheet - VLOOKUP, INDEX-MATCH & Nested IF](Screenshot%202026-05-26%20170313.png)
+
 ### 📊 Pivot Tables & Charts (`Pivot Tables & Charts`)
 
 Three pivot tables were built as the backbone of the dashboard:
@@ -87,6 +91,17 @@ Three pivot tables were built as the backbone of the dashboard:
 | Movies vs TV Shows | `type` | Count of `show_id` | 📊 Bar Chart |
 | Top Countries by Content | `country` | Count of `show_id` | 🥧 Pie Chart |
 | Content by Release Year | `release_year` | Count of `show_id` | 📈 Line Chart |
+
+### 🎨 Conditional Formatting (`Raw Data`)
+
+Applied a **color scale** across the `release_year` and `rating` columns to visually highlight patterns at a glance:
+- 🟢 **Green** → Recent years / more common ratings (e.g. 2021, TV-MA)
+- 🟡 **Yellow** → Mid-range values
+- 🟠 **Orange** → Older or less frequent entries (e.g. 1993, TV-PG)
+
+📸 **Conditional Formatting in Action:**
+
+![Conditional Formatting on Raw Data](Screenshot%202026-05-26%20170249.png)
 
 ### 🎛️ Interactive Dashboard (`Dashboard`)
 
@@ -146,6 +161,8 @@ Raw CSV Data
 | `Harshal_ExcelDashboard.xlsx` | Full Excel workbook with dashboard, pivot tables, formulas & raw data |
 | `netflix_titles.csv` | Original Netflix dataset used as the data source |
 | `dashboard_preview.png` | Screenshot of the completed interactive dashboard |
+| `Screenshot 2026-05-26 170313.png` | Formula Sheet — VLOOKUP, INDEX-MATCH & Nested IF in action |
+| `Screenshot 2026-05-26 170249.png` | Raw Data — Conditional Formatting applied to `release_year` & `rating` |
 
 ---
 
@@ -156,6 +173,7 @@ Raw CSV Data
 ✅ **Real-world dataset** — 8,809 actual Netflix titles  
 ✅ **Interactive** — Slicers and timeline allow dynamic exploration  
 ✅ **Clean formula logic** — Demonstrates VLOOKUP, INDEX-MATCH, and conditional logic  
+✅ **Conditional Formatting** — Color-coded raw data for instant visual pattern recognition  
 
 ---
 
